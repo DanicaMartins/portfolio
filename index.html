@@ -26,7 +26,7 @@
   <body>
     <div id="navbar">
       <img src="" />
-      <a href="#">PROJECTS</a>
+      <a href="#projects" class="ml">PROJECTS</a>
       <a href="#about">ABOUT</a>
     </div>
 
@@ -53,24 +53,29 @@
 
     <div id="about">
       <div id="about-div1">
-        <h2>What am I acquainted with?</h2>
+        <h2>What are my expertise?</h2>
         <button id="tools-btn" onclick="showTools()">See Here</button>
 
         <div id="tools-div">
           <button onclick="closeTools()" id="tools-close">Close</button>
-          <img src="about-01.png" />
+          <img src="ABOUT-01.jpg" />
         </div>
       </div>
 
       <div id="about-div2">
-        <h2>What are my expertise?</h2>
+        <h2>What am I acquainted with?</h2>
         <button id="skills-btn" onclick="showSkills()">See Here</button>
 
         <div id="skills-div">
             <button onclick="closeSkills()" id="skills-close">Close</button>
-            <img src="skills-01.png" />
+            <img src="skills-01.jpg" />
           </div>
       </div>
+
+    </div>
+
+    <div id="projects">
+
 
     </div>
     <script>
@@ -96,6 +101,10 @@
       var skillsClose = document.getElementById("skills-close");
 
       var showSkills = function () {
+
+        /*if (window.matchMedia("(max-width: 768px)").matches){
+          skillsDiv.style.height = "300px";
+        }*/
         skillsDiv.style.height = "500px";
         skillsBtn.style.display = "none";
         skillsClose.style.display = "block";
