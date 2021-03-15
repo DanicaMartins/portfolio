@@ -1,94 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Danica Martins</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div id="navbar">
-        <img src="">
-        <a href="#">PROJECTS</a>
-        <a href="#about">ABOUT</a>
-        
+      <img src="" />
+      <a href="#">PROJECTS</a>
+      <a href="#about">ABOUT</a>
     </div>
+
     <div id="home">
-        <img id="profile-pic" src="protpic" >
-        
-        <h1>Danica Martins</h1>
-        <div id="home-para">
-        <p id="home-para-big">Currently Studying at,<br>
-            Srishti Institue of Art, Design and Technology</p>
-        <p>I am an aspiring designer, currently 
-            exploring, experimenting and discovering 
-            the relationship between humans and 
-            technology.
-            </p>
-        </div>
-        <div id="home-pictures">
-            <a href="#"><img src="ig.jpg"></a>
-            <a href="#"><img src="in.jpg"></a>
-        </div>
+      <img id="profile-pic" src="protpic.png" />
+      <h1>Danica Martins</h1>
+      <div id="home-para">
+        <p id="home-para-big">
+          Currently Studying at,<br />
+          Srishti Institue of Art, Design and Technology
+        </p>
+        <p>
+          I am an aspiring designer, currently exploring, experimenting and
+          discovering the relationship between humans and technology.
+        </p>
+      </div>
+
+      <div id="home-pictures">
+        <a href="#"><img src="ig.jpg" /></a>
+        <a href="#"><img src="in.jpg" /></a>
+      </div>
+
     </div>
 
     <div id="about">
+      <div id="about-div1">
+        <h2>What am I acquainted with?</h2>
+        <button id="tools-btn" onclick="showTools()">See Here</button>
 
-        <div id="about-div1" >
-
-            <h2>Tools</h2>
-            <button id="tools-btn" onclick="showTools()">What am I acquainted with?</button>
-
-                <div id="tools-div">  
-                    <button onclick="closeTools()" id="tools-close">X</button>
-                    <img src="about-01.png">
-                </div>  
-
-            </div>
-
-         <div id="about-div2">
-            <h2>Skills</h2>
-            <button>What are my expertise?</button>
+        <div id="tools-div">
+          <button onclick="closeTools()" id="tools-close">Close</button>
+          <img src="about-01.png" />
         </div>
+      </div>
 
+      <div id="about-div2">
+        <h2>What are my expertise?</h2>
+        <button id="skills-btn" onclick="showSkills()">See Here</button>
+
+        <div id="skills-div">
+            <button onclick="closeSkills()" id="skills-close">Close</button>
+            <img src="skills-01.png" />
+          </div>
+      </div>
 
     </div>
-<script>
-    /*var skillsClose = document.getElementById("skillsClose")
-    var skillsBtn = document.getElementById("skillsBtn");
-    var skillsDiv = document.getElementById("skills");
-    var showskill = function(){
-        skillsDiv.style.height = "300px";
-        skillsBtn.style.display = "none";
-        skillsClose.style.display = "block";
-        
-    }
-    var closeSkills = function(){
-        skillsDiv.style.height = "0px";
-        skillsBtn.style.display = "block";
-        skillsClose.style.display = "none";
-    }*/
+    <script>
 
-    var toolsDiv = document.getElementById("tools-div");
-    var toolsBtn = document.getElementById("tools-btn");
-    var toolsClose = document.getElementById("tools-close")
-    
-    var showTools = function (){
+      var toolsDiv = document.getElementById("tools-div");
+      var toolsBtn = document.getElementById("tools-btn");
+      var toolsClose = document.getElementById("tools-close");
+
+      var showTools = function () {
         toolsDiv.style.height = "500px";
         toolsBtn.style.display = "none";
         toolsClose.style.display = "block";
-    }
-     var closeTools = function(){
+      };
+
+      var closeTools = function () {
         toolsDiv.style.height = "0px";
         toolsBtn.style.display = "block";
         toolsClose.style.display = "none";
-     }
-</script>
-</body>
+      };
+
+      var skillsDiv = document.getElementById("skills-div");
+      var skillsBtn = document.getElementById("skills-btn");
+      var skillsClose = document.getElementById("skills-close");
+
+      var showSkills = function () {
+        skillsDiv.style.height = "500px";
+        skillsBtn.style.display = "none";
+        skillsClose.style.display = "block";
+      };
+
+      var closeSkills = function () {
+        skillsDiv.style.height = "0px";
+        skillsBtn.style.display = "block";
+        skillsClose.style.display = "none";
+      };
+    </script>
+  </body>
 </html>
