@@ -4,7 +4,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+#home {
+  height: 100vh;
+}
 #profile-pic {
   position: absolute;
   left: 60%;
@@ -43,11 +45,11 @@
   display: flex;
   float: right;
 }
-.ml{
+.ml {
   margin-right: 10vw;
 }
 #navbar {
-  background-color:white;
+  background-color: white;
   width: 100%;
   position: fixed;
   z-index: 100;
@@ -88,8 +90,7 @@
 }
 
 #about-div1,
-#about-div2
-{
+#about-div2 {
   margin-top: 10vh;
 }
 
@@ -123,66 +124,109 @@
 #skills-close {
   display: none;
 }
-#projects{
+#projects {
   position: absolute;
   top: 200%;
   width: 100%;
   height: 100vh;
 }
-#work-text{
+#work-text {
   font-size: 35px;
-  width:20vw;
+  width: 20vw;
   position: relative;
   top: 15vh;
   left: 5vw;
 }
-#hr-work{
+#hr-work {
   position: relative;
   top: 15vh;
   left: 5vw;
   width: 85vw;
 }
 
-#work-container{
+#work-container {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   top: 15vh;
   left: 5vw;
-  width:85vw ;
+  width: 85vw;
   height: 200vh;
 }
-.inner-container{
+.inner-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.projects{
-  width: 30vw;
-  height: 50vh;
+.projects {
+  width: 400px;
+  height: 300px;
   border-radius: 10px;
   box-shadow: 0px 12px 20px #dfe1e5;
   transition: all 0.2s ease;
 }
-.projects:hover{
+.projects:hover {
   transform: scale(1.2);
 }
-.projects img{
- width: 30vw;
+.projects img {
+  width: inherit;
 }
-.projects p{
+.projects p {
   position: relative;
-  top:20px;
-  left: 50px;
+  top: 10px;
+  left: 10px;
+}
+@media only screen and (max-width: 1420px) {
+  #profile-pic {
+    width: 350px;
+  }
+  #home h1 {
+    font-size: 80px;
+  }
+  #home-para-big {
+    font-size: 30px;
+  }
+  #home-para {
+    font-size: 20px;
+  }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
+  #profile-pic {
+    width: 300px;
+  }
+  #home h1 {
+    font-size: 75px;
+  }
+  #home-para-big {
+    font-size: 25px;
+  }
+  #home-para {
+    font-size: 20px;
+  }
+  .projects {
+    height: 42vh;
+  }
+  #about-div1 h2,
+  #about-div2 h2 {
+    font-size: 30px;
+  }
+  #about-div1 button,
+  #about-div2 button {
+    font-size: 16px;
+  }
+  .projects {
+    width: 350px;
+    height: 280px;
+  }
+}
+@media only screen and (max-width: 1050px) {
   #profile-pic {
     width: 300px;
   }
   #navbar a {
-    font-size: 20px;
+    font-size: 25px;
   }
   #home h1 {
     font-size: 60px;
@@ -191,7 +235,55 @@
     font-size: 20px;
   }
   #home-para {
+    font-size: 16px;
+  }
+  .projects {
+    height: 42vh;
+  }
+  #about-div1 h2,
+  #about-div2 h2 {
+    font-size: 30px;
+  }
+  #about-div1 button,
+  #about-div2 button {
+    font-size: 16px;
+  }
+  .projects {
+    width: 300px;
+    height: 250px;
+  }
+  #home-para {
+    position: absolute;
+    top: 38%;
+    left: 10%;
+    width: 700px;
+  }
+  #work-container {
+    height: 150vh;
+  }
+
+  #home-pictures {
+    top: 70%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #profile-pic {
+    width: 250px;
+  }
+  #navbar a {
+    font-size: 20px;
+  }
+  #home h1 {
+    font-size: 45px;
+  }
+  #home-para-big {
     font-size: 18px;
+  }
+  #home-para {
+    font-size: 16px;
+  }
+  #home-pictures img {
+    width: 55px;
   }
   #about-div1 h2,
   #about-div2 h2 {
@@ -212,13 +304,23 @@
     left: 0px;
     width: 250px;
   }
-  .projects{
-    height: 30vh;
+  #work-container {
+    height: 150vh;
   }
-  .projects p{
+  .projects p {
     position: relative;
     font-size: small;
-    top:10px;
+    top: 10px;
     left: 10px;
+  }
+  .projects {
+    width: 250px;
+    height: 200px;
+  }
+  #home-para {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 600px;
   }
 }
