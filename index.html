@@ -30,9 +30,9 @@
       <a href="#about">ABOUT</a>
     </div>
     <div id="mobile-nav">
-      <a href="#home"><img id="mob-logo" src="logo.jpg"></a>
-      <img id="mob-menu" src="menu-icon.jpg" onclick="mobdrop()">
-      <img id="mob-close" src="close.png" onclick="mobclose()">
+      <a href="#home"><img id="mob-logo" src="logo.jpg" /></a>
+      <img id="mob-menu" src="menu-icon.jpg" onclick="mobdrop()" />
+      <img id="mob-close" src="close.png" onclick="mobclose()" />
       <div id="mob-drop">
         <a class="mob-a" href="#about">About</a>
         <a class="mob-a" href="#projects">Projects</a>
@@ -54,8 +54,12 @@
       </div>
 
       <div id="home-pictures">
-        <a href="#"><img src="ig.jpg" /></a>
-        <a href="#"><img src="in.jpg" /></a>
+        <a href="https://www.instagram.com/danica_martins/"
+          ><img src="ig.jpg"
+        /></a>
+        <a href="https://www.linkedin.com/in/danica-martins-0b0464206/"
+          ><img src="in.jpg"
+        /></a>
       </div>
     </div>
 
@@ -120,9 +124,13 @@
     <footer>
       <div id="footer-pictures">
         <p>Get In Touch</p>
-        <hr>
-        <a href="#"><img src="ig.jpg" /></a>
-        <a href="#"><img src="in.jpg" /></a>
+        <hr />
+        <a href="https://www.instagram.com/danica_martins/"
+          ><img src="ig.jpg"
+        /></a>
+        <a href="https://www.linkedin.com/in/danica-martins-0b0464206/"
+          ><img src="in.jpg"
+        /></a>
       </div>
     </footer>
     <script>
@@ -166,20 +174,20 @@
       var mob_menu = document.getElementById("mob-menu");
       var moba = document.querySelectorAll(".mob-a");
 
-      var mobdrop = function(){
+      var mobdrop = function () {
         mob_drop.style.height = "25vh";
-        mob_menu.style.display="none";
-        mob_close.style.display="inline-block";
-        moba[0].style.display="block";
-        moba[1].style.display="block";
-      }
-      var mobclose = function(){
+        mob_menu.style.display = "none";
+        mob_close.style.display = "inline-block";
+        moba[0].style.display = "block";
+        moba[1].style.display = "block";
+      };
+      var mobclose = function () {
         mob_drop.style.height = "0vh";
-        mob_close.style.display="none";
-        mob_menu.style.display="inline-block";
-        moba[0].style.display="none";
-        moba[1].style.display="none";
-      }
+        mob_close.style.display = "none";
+        mob_menu.style.display = "inline-block";
+        moba[0].style.display = "none";
+        moba[1].style.display = "none";
+      };
     </script>
   </body>
 </html>

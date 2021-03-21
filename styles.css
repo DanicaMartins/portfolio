@@ -561,7 +561,7 @@ footer {
     top: 60%;
     width: 80vw;
     font-family: "Roboto", sans-serif;
-    left: 15%;
+    left: 14%;
     color: #2c2b2b;
   }
 
@@ -599,7 +599,7 @@ footer {
   }
   #about-div1 h2,
   #about-div2 h2 {
-    width: 70vw;
+    width: 80vw;
     font-size: 24px;
     left: 20px;
   }
