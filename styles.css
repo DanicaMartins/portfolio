@@ -59,7 +59,13 @@
 #navbar a:hover {
   color: #1d1d1d;
 }
-
+#logo {
+  position: relative;
+  left: 50px;
+  top: 10px;
+  width: 70px;
+  cursor: pointer;
+}
 #home-pictures {
   position: absolute;
   top: 80%;
@@ -177,6 +183,10 @@
   top: 10px;
   left: 10px;
 }
+
+#mobile-nav {
+  display: none;
+}
 @media only screen and (max-width: 1420px) {
   #profile-pic {
     width: 350px;
@@ -265,6 +275,11 @@
   #home-pictures {
     top: 70%;
   }
+  #logo {
+    left: 50px;
+    top: 10px;
+    width: 60px;
+  }
 }
 @media only screen and (max-width: 800px) {
   #profile-pic {
@@ -288,6 +303,9 @@
   #about-div1 h2,
   #about-div2 h2 {
     font-size: 20px;
+    position: relative;
+    left: 20px;
+    width: 40vw;
   }
   #about-div1 button,
   #about-div2 button {
@@ -295,14 +313,14 @@
   }
   #tools-div,
   #skills-div {
-    height: 300px;
+    height: 400px;
     margin-top: 0vh;
   }
   #tools-div img,
   #skills-div img {
     top: 0px;
     left: 0px;
-    width: 250px;
+    width: 350px;
   }
   #work-container {
     height: 150vh;
@@ -322,5 +340,303 @@
     top: 35%;
     left: 10%;
     width: 600px;
+  }
+  #logo {
+    left: 50px;
+    top: 10px;
+    width: 50px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #navbar {
+    display: none;
+  }
+  #mobile-nav {
+    display: block;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    box-shadow: 1px 3px 5px #dfe1e5;
+    position: fixed;
+    z-index: 100;
+  }
+  #mob-logo {
+    width: 50px;
+    position: relative;
+    left: 10vw;
+    top: 10px;
+  }
+  #mob-menu {
+    width: 50px;
+    position: relative;
+    left: 70vw;
+    top: 10px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  #mob-close {
+    width: 50px;
+    position: relative;
+    left: 70vw;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+  }
+  #mob-drop {
+    position: relative;
+    width: 100%;
+    height: 0vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 3px 5px #dfe1e5;
+    transition: all 0.2s ease;
+  }
+  .mob-a {
+    padding: 35px 10vw;
+    font-size: large;
+    display: none;
+    text-decoration: none;
+    font: large;
+    color: #756e6e;
+  }
+  .mob-a:hover {
+    color: #2b2b22;
+  }
+  #profile-pic {
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    width: 300px;
+  }
+
+  #home h1 {
+    position: absolute;
+    font-size: 50px;
+    top: 60%;
+    width: 70vw;
+    font-family: "Roboto", sans-serif;
+    left: 12%;
+    color: #2c2b2b;
+  }
+
+  #home p {
+    font-family: "Noto Sans JP", sans-serif;
+    padding: 30px 0;
+  }
+
+  #home-para {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    width: 60vw;
+    font-size: 20px;
+  }
+  #home-para-big {
+    font-size: 25px;
+  }
+  #home-pictures {
+    display: none;
+  }
+  #about {
+    flex-direction: column;
+    align-items: center;
+    top: 120%;
+    height: 200vh;
+  }
+
+  #tools-div img,
+  #skills-div img {
+    width: 400px;
+    height: 500px;
+  }
+  #projects {
+    top: 320%;
+  }
+  #about-div1 h2,
+  #about-div2 h2 {
+    width: 70vw;
+    font-size: 30px;
+    left: 20px;
+  }
+  #work-text {
+    font-size: 25px;
+    width: 20vw;
+    position: relative;
+    top: 15vh;
+    left: 5vw;
+  }
+  #hr-work {
+    position: relative;
+    top: 15vh;
+    left: 5vw;
+    width: 85vw;
+  }
+  .inner-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+  }
+  #work-container {
+    height: 250vh;
+    width: 80vw;
+  }
+  .projects {
+    width: 350px;
+    height: 260px;
+  }
+}
+
+@media only screen and (max-width: 478px){
+  #navbar {
+    display: none;
+  }
+  #mobile-nav {
+    display: block;
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    box-shadow: 1px 3px 5px #dfe1e5;
+    position: fixed;
+    z-index: 100;
+  }
+  #mob-logo {
+    width: 50px;
+    position: relative;
+    left: 10vw;
+    top: 10px;
+  }
+  #mob-menu {
+    width: 50px;
+    position: relative;
+    left: 65vw;
+    top: 10px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  #mob-close {
+    width: 50px;
+    position: relative;
+    left: 70vw;
+    top: 10px;
+    cursor: pointer;
+    display: none;
+  }
+  #mob-drop {
+    position: relative;
+    width: 100%;
+    top: 0;
+    height: 0vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 3px 5px #dfe1e5;
+    transition: all 0.2s ease;
+
+  }
+  .mob-a {
+    padding: 30px 10vw;
+    font-size: large;
+    display: none;
+    text-decoration: none;
+    font: large;
+    color: #756e6e;
+  }
+  .mob-a:hover {
+    color: #2b2b22;
+  }
+  #profile-pic {
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    width: 300px;
+  }
+
+  #home h1 {
+    position: absolute;
+    font-size: 45px;
+    top: 60%;
+    width: 80vw;
+    font-family: "Roboto", sans-serif;
+    left: 15%;
+    color: #2c2b2b;
+  }
+
+  #home p {
+    font-family: "Noto Sans JP", sans-serif;
+    padding: 30px 0;
+  }
+
+  #home-para {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    width: 70vw;
+    font-size: 20px;
+  }
+  #home-para-big {
+    font-size: 25px;
+  }
+  #home-pictures {
+    display: none;
+  }
+  #about {
+    flex-direction: column;
+    align-items: center;
+    top: 120%;
+    height: 200vh;
+  }
+  #tools-div img,
+  #skills-div img {
+    width: 400px;
+    height: 500px;
+  }
+  #projects {
+    top: 320%;
+  }
+  #about-div1 h2,
+  #about-div2 h2 {
+    width: 70vw;
+    font-size: 24px;
+    left: 20px;
+  }
+  #work-text {
+    font-size: 25px;
+    width: 30vw;
+    position: relative;
+    top: 15vh;
+    left: 5vw;
+  }
+  #hr-work {
+    position: relative;
+    top: 15vh;
+    left: 5vw;
+    width: 85vw;
+  }
+  .inner-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+  }
+  #work-container {
+    height: 250vh;
+    width: 90vw;
+  }
+  .projects {
+    width: 300px;
+    height: 230px;
+  }
+}
+@media only screen and (max-width: 378px){
+  #home h1{
+    font-size: 35px;
+    left: 20%;
+  }
+  #tools-div img,
+  #skills-div img {
+    width: 300px;
+    height: 375px;
   }
 }
