@@ -190,9 +190,9 @@
 footer {
   display: none;
 }
-.inner-container a{
+.atag-proj{
   text-decoration: none;
-  color:inherit ;
+  color: #1d1d1d;
 }
 @media only screen and (max-width: 1420px) {
   #profile-pic {
