@@ -191,8 +191,8 @@ footer {
   display: none;
 }
 .atag-proj{
-  text-decoration: none;
-  color: #1d1d1d;
+  text-decoration: none !important;
+  color: #1d1d1d !important;
 }
 @media only screen and (max-width: 1420px) {
   #profile-pic {
