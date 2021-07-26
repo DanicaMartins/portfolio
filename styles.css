@@ -509,13 +509,13 @@ footer {
     z-index: 100;
   }
   #mob-logo {
-    width: 50px;
+    width: 40px;
     position: relative;
     left: 10vw;
     top: 10px;
   }
   #mob-menu {
-    width: 50px;
+    width: 40px;
     position: relative;
     left: 65vw;
     top: 10px;
@@ -523,7 +523,7 @@ footer {
     display: inline-block;
   }
   #mob-close {
-    width: 50px;
+    width: 40px;
     position: relative;
     left: 70vw;
     top: 10px;
@@ -633,6 +633,7 @@ footer {
   .projects {
     width: 300px;
     height: 230px;
+    margin: 20px;
   }
   footer {
     display: block;
@@ -645,7 +646,7 @@ footer {
   }
   #footer-pictures {
     position: absolute;
-    top: 575%;
+    top: 225%;
     height: 20vh;
   }
   #footer-pictures p {
