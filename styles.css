@@ -190,7 +190,7 @@
 footer {
   display: none;
 }
-.atag-proj{
+.atag-proj {
   text-decoration: none !important;
   color: #1d1d1d !important;
 }
@@ -276,11 +276,11 @@ footer {
     width: 700px;
   }
   #work-container {
-    height: 150vh;
+    height: 200vh;
   }
 
   #home-pictures {
-    top: 70%;
+    top: 75%;
   }
   #logo {
     left: 50px;
@@ -486,7 +486,7 @@ footer {
     height: 600px;
   }
   #work-container {
-    height: 250vh;
+    height: 350vh;
     width: 80vw;
   }
   .projects {
@@ -627,7 +627,7 @@ footer {
     height: 600px;
   }
   #work-container {
-    height: 200vh;
+    height: 350vh;
     width: 90vw;
   }
   .projects {
@@ -646,7 +646,7 @@ footer {
   }
   #footer-pictures {
     position: absolute;
-    top: 225%;
+    top: 700%;
     height: 20vh;
   }
   #footer-pictures p {
