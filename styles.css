@@ -87,7 +87,8 @@
 
 #about {
   position: absolute;
-  top: 100%;
+  /* top: 100%; */
+  top:325%;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -132,7 +133,7 @@
 }
 #projects {
   position: absolute;
-  top: 200%;
+  top: 100%;
   width: 100%;
   height: 100vh;
 }
@@ -423,7 +424,7 @@ footer {
     top: 60%;
     width: 70vw;
     font-family: "Roboto", sans-serif;
-    left: 12%;
+    left: 20%;
     color: #2c2b2b;
   }
 
@@ -448,7 +449,8 @@ footer {
   #about {
     flex-direction: column;
     align-items: center;
-    top: 120%;
+    /* top: 120%; */
+    top:480%;
     height: 200vh;
   }
 
@@ -458,7 +460,7 @@ footer {
     height: 500px;
   }
   #projects {
-    top: 320%;
+    top: 120%;
   }
   #about-div1 h2,
   #about-div2 h2 {
@@ -492,6 +494,31 @@ footer {
   .projects {
     width: 350px;
     height: 260px;
+  }
+  footer {
+    display: block;
+  }
+  #footer-pictures img {
+    position: relative;
+    left: 5vw;
+    width: 70px;
+    padding: 0px 10px;
+  }
+  #footer-pictures {
+    position: absolute;
+    top: 700%;
+    height: 20vh;
+  }
+  #footer-pictures p {
+    position: relative;
+    left: 5vw;
+    font-size: 25px;
+  }
+  #footer-pictures hr {
+    width: 85vw;
+    position: relative;
+    top: 0vh;
+    left: 5vw;
   }
 }
 
@@ -590,7 +617,7 @@ footer {
   #about {
     flex-direction: column;
     align-items: center;
-    top: 120%;
+    top: 500%;
     height: 175vh;
   }
   #tools-div img,
@@ -599,7 +626,7 @@ footer {
     height: 500px;
   }
   #projects {
-    top: 320%;
+    top: 120%;
   }
   #about-div1 h2,
   #about-div2 h2 {
@@ -646,7 +673,7 @@ footer {
   }
   #footer-pictures {
     position: absolute;
-    top: 725%;
+    top: 700%;
     height: 20vh;
   }
   #footer-pictures p {
